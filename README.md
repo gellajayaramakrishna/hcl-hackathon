@@ -17,6 +17,8 @@ Results on the held-out test split (102 queries, **mock mode**, placeholder pric
 
 Cache safety: 7 of 8 paraphrases reused, 0 of 3 number-changed questions reused, 0 wrong cache hits.
 These numbers come from mock models. Rerun `scripts/eval.py` with real models for real numbers.
+They vary a little from run to run: the small model's self-consistency samples are random, and a fresh
+build re-creates the search index. Across our runs, "ours" scored 92–94% accuracy with 23–29% savings.
 
 ---
 
