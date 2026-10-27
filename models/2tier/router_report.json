@@ -1,0 +1,51 @@
+{
+  "always_small": {
+    "accuracy": 0.3333333333333333,
+    "cost_usd": 0.004191800000000001,
+    "tier_share": {
+      "small": 1.0,
+      "large": 0.0
+    },
+    "score": 0.11141816487672043
+  },
+  "always_large": {
+    "accuracy": 0.5784313725490197,
+    "cost_usd": 0.009444599999976001,
+    "tier_share": {
+      "small": 0.0,
+      "large": 1.0
+    },
+    "score": 0.07843137254901966
+  },
+  "oracle": {
+    "accuracy": 0.6764705882352942,
+    "cost_usd": 0.006072199999989002,
+    "tier_share": {
+      "small": 0.6568627450980392,
+      "large": 0.3431372549019608
+    },
+    "score": 0.35500647117345824
+  },
+  "router": {
+    "accuracy": 0.45098039215686275,
+    "cost_usd": 0.007186399999985,
+    "tier_share": {
+      "small": 0.4411764705882353,
+      "large": 0.5588235294117647
+    },
+    "score": 0.07053018780711473
+  },
+  "meta": {
+    "threshold": 0.45,
+    "cost_weight": 0.5,
+    "tiers": [
+      "small",
+      "large"
+    ],
+    "n": {
+      "train": 301,
+      "tune": 97,
+      "test": 102
+    }
+  }
+}

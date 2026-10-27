@@ -1,0 +1,18 @@
+# Model tiers and prices. PLACEHOLDERS: replace with the organizers' price sheet.
+# litellm_model is any LiteLLM model string (e.g. "gpt-4o-mini", "anthropic/claude-...", "ollama/qwen2.5:0.5b").
+# Prices are per 1 million tokens, in `currency`.
+currency: USD
+
+models:
+  small:
+    litellm_model: ollama/qwen2.5:0.5b
+    input_per_1m: 0.10
+    output_per_1m: 0.20
+  medium:
+    litellm_model: ollama/qwen2.5:1.5b
+    input_per_1m: 0.60
+    output_per_1m: 1.20
+  large:
+    litellm_model: ollama/qwen2.5:7b
+    input_per_1m: 2.00
+    output_per_1m: 4.00

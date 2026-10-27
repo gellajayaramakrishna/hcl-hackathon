@@ -1,0 +1,50 @@
+# PLACEHOLDER - replace with the organizers' price sheet
+#
+# Three model tiers for the router. Prices are made up but keep a realistic ratio
+# (large is ~20x small), so cost-vs-accuracy trade-offs behave sensibly in development.
+# Prices are per 1,000 tokens. The Ollama models are free to run locally; the prices only
+# exist so the router's cost accounting can be built and tested now.
+
+models:
+  small:
+    name: qwen2.5:0.5b
+    provider: ollama
+    price_in_per_1k: 0.0001
+    price_out_per_1k: 0.0002
+    currency: USD
+  medium:
+    name: qwen2.5:3b
+    provider: ollama
+    price_in_per_1k: 0.0006
+    price_out_per_1k: 0.0012
+    currency: USD
+  large:
+    name: qwen2.5:7b
+    provider: ollama
+    price_in_per_1k: 0.0020
+    price_out_per_1k: 0.0040
+    currency: USD
+
+# --- Alternative: hosted API models -------------------------------------------------
+# Uncomment (and comment out the block above) to route between API models instead.
+# Prices are illustrative only. Copy the real numbers from the provider's pricing page.
+#
+# models:
+#   small:
+#     name: claude-haiku-5-5
+#     provider: anthropic
+#     price_in_per_1k: 0.001
+#     price_out_per_1k: 0.005
+#     currency: USD
+#   medium:
+#     name: claude-sonnet-5-5
+#     provider: anthropic
+#     price_in_per_1k: 0.003
+#     price_out_per_1k: 0.015
+#     currency: USD
+#   large:
+#     name: claude-opus-5-5
+#     provider: anthropic
+#     price_in_per_1k: 0.015
+#     price_out_per_1k: 0.075
+#     currency: USD

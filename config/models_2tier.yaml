@@ -1,0 +1,17 @@
+# TEMPORARY dev config: two small local models that fit in the free disk space.
+# Use config/models.yaml (3 tiers incl. qwen2.5:7b) once ~5 GB of disk is free.
+# Prices are placeholders, roughly proportional to model size (1.5b ~3x the 0.5b).
+
+models:
+  small:
+    name: qwen2.5:0.5b
+    provider: ollama
+    price_in_per_1k: 0.0001
+    price_out_per_1k: 0.0002
+    currency: USD
+  large:
+    name: qwen2.5:1.5b
+    provider: ollama
+    price_in_per_1k: 0.0003
+    price_out_per_1k: 0.0006
+    currency: USD
